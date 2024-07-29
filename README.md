@@ -4,11 +4,11 @@ A tarefa solicita a utilização de Python para ordenar um array de strings com 
 
 O array escolhido continha as strings "Gama", "Matematica", "Vestibular", "IA" e o caractere escolhido foi a letra "a".
 
-Utilizou-se a função .sort() para ordenar a lista, criando um novo array. Foi fornecido como key value uma nova função anônima (lambda), que percorrerá os elementos do array original (palavras). 
+Utilizou-se a função .sort() para ordenar a lista. Foi fornecido como key value uma função lambda, que retornará a quantidade de caracteres específicos encontrados em cada elemento (palavra).  
 
-Para cada elemento (palavra), as letras serão convertidas em minúsculas com o .lower(), uma vez que as letras minúsculas e maiúsculas possuem número de ordem diferente, não considerando somente a ordem alfabética. 
+Para a verificação, as letras serão convertidas em minúsculas com o .lower(), uma vez que as letras minúsculas e maiúsculas possuem valores diferentes, podendo não ser reconhecido.
 
-A função .count() recebe como parâmetro a variável caracter e realiza a contagem do mesmo em cada elemento do array. Por fim, para estabelecer a ordem decrescente, foi utilizado o parâmetro reverse e seu valor foi True.
+A função .count() recebe como parâmetro a variável caractere, que representa nosso letra buscada, e retorna a frequência da mesma em cada elemento do array. Por fim, para estabelecer a ordem decrescente, foi utilizado o parâmetro reverse.
 
-O novo array é então printado com a função print().
+O array é então exibido com a função print().
 
